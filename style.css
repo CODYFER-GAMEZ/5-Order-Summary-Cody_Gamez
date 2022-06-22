@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    /* font-size: 16px; */
+}
+
+
+body{
+    width: 100%;
+    height: 900px;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("recursos/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    /* background-position: center center; */
+    display: flex;
+    flex-direction: column;
+   
+ 
+    
+
+}
+
+.caja_container{
+ border-radius: 15px;
+ /*outline: 4px solid red;
+ */margin: auto;
+ width:450px;
+ height: 695px;
+ display: flex;
+ flex-direction: column;
+ background: white;
+  
+ -webkit-border-radius: 15px;
+ -moz-border-radius: 15px;
+ -ms-border-radius: 15px;
+ -o-border-radius: 15px;
+}
+.caja_img{
+    background-image: url("recursos/images/illustration-hero.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+}
+
+.caja{
+    /* outline: 3px solid blue; */
+    margin: auto 15px;
+    height: 58%;
+    text-align: center;
+       font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+h1{
+ font-weight: 900;
+     /* outline: 2px solid rgb(190, 16, 16); */
+     letter-spacing:0.4px;
+ margin-top: 15px;
+ margin-bottom: -20px;
+ font-size: 27px;
+ font-family: 'Red Hat Display', sans-serif;
+ color:hsl(223, 47%, 23%);
+}
+p{
+     /* outline: 2px solid rgb(0, 0, 0); */
+ font-weight: 500;
+ font-size: 16px;
+ margin: -5px;
+ color: hsl(224, 23%, 55%);
+ letter-spacing:2.5;
+ line-height: 1.7;
+ margin-bottom: -15px;
+}
+
+.menu{
+    /* outline: 2px solid rgb(0, 0, 0); */
+    background: hsla(225, 100%, 94%, 0.397);
+    margin: 0 auto;
+    padding: 0  30px;
+    width: 85%;
+    height:95px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+
+    border-radius: 15px ;
+    -webkit-border-radius: 15px ;
+    -moz-border-radius: 15px ;
+    -ms-border-radius: 15px ;
+    -o-border-radius: 15px ;
+}
+
+span{
+    font-size: 14px;
+     color:hsl(223, 47%, 23%);
+   
+     font-weight:800;
+    }
+.uno{
+    background: none;
+    margin-left:15px ;
+    color: hsl(224, 23%, 55%);
+    justify-content:left;
+    padding: 0  0;
+}
+.cuenta{
+    font-size: 16px;
+    margin-left: 20px; 
+    /* outline: 2px solid red; */
+    text-align: left;
+    line-height: 1.6;
+}
+.dos a {
+    /* outline: 2px solid red; */
+    color:hsl(245, 75%, 52%) ;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 14px;
+   margin-right:15px ;
+
+}
+
+button{
+    background: hsl(245, 75%, 52%);
+    color:  hsl(225, 100%, 98%);
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    margin: 0 auto;
+    width: 85%;
+    height: 50px;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    
+    box-shadow: 0 8px 15px hsla(225, 100%, 94%, 0.432),
+    0 12px 15px rgba(0, 0, 0, 0.267);
+
+    
+}
+button:hover{
+    cursor: pointer;
+    background: hsl(245, 80%, 45%);
+    border-left: 8px solid hsl(245, 90%, 38%);
+    border-right: 8px solid hsl(245, 90%, 38%);
+ 
+}
+.pie{
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+
+    
+    .caja_container{
+        border-radius: 15px;
+        /* outline: 4px solid red; */
+        margin: auto;
+        max-width:350px;
+        height: 630px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .caja_img{
+        background-image: url("recursos/images/illustration-hero.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 220px;
+    }
+    .caja{
+        /* outline: 3px solid blue; */
+        margin: 15px;
+        height: 70%;
+        margin-top:-24px;
+    }
+
+
+.menu{
+    /* outline: 2px solid rgb(0, 0, 0); */
+    margin: -20px auto;
+    padding: 0  30px;
+    padding:0;
+  justify-content: space-between;
+
+}
+
+
+.uno{
+    display: flex;
+    flex-direction: row;
+    /* outline: 2px solid red; */
+    background: none;
+    margin-left:15px ;
+   
+    justify-content:left;
+    padding: 0  0;
+}
+.cuenta{
+    margin-left: 15px; 
+ 
+}
+.dos a {
+   margin-right:15px ;
+
+}
+.pie{
+   margin-bottom: 25px;
+}
+}
